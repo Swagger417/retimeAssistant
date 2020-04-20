@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "retimeAssistant"
+    }
+  },
+  "defaultProject": "retimeAssistant",
+  "cli": {
+    "analytics": false
+  }
 }

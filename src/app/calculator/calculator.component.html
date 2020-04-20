@@ -1,0 +1,26 @@
+<div>
+    <h1>Retime Assistant</h1>
+    <label>Ankunftszeit eigenes Dorf </label>
+    <br><br>
+    <input (keyup)="onArrivalHours($event)">
+    <label> hh </label>
+    <input (keyup)="onArrivalMinutes($event)">
+    <label> mm </label>
+    <input (keyup)="onArrivalSeconds($event)">
+    <label> ss </label>
+    <br><br>
+    <label>Laufzeit Gegner </label>
+    <br><br>
+    <input (keyup)="onWalkingHours($event)">
+    <label> hh </label>
+    <input (keyup)="onWalkingMinutes($event)">
+    <label> mm </label>
+    <input (keyup)="onWalkingSeconds($event)">
+    <label> ss </label>
+    <br><br>
+    <button (click)="onCalculate()">Berechnen</button>
+    <br><br>
+    <p><b>Ankunft gegnerische Truppen: </b></p>
+
+    <h2>{{outputHours}}:{{outputMinutes}}:{{outputSeconds}} Uhr</h2>
+</div>
